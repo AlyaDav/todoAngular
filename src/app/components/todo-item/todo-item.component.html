@@ -1,0 +1,11 @@
+<div class="todo-item" *ngIf="todo">
+{{todo}}
+    <div class="actions">
+        <button type="submit" class="btn second"(click)="onDelete()">
+            <span class="glyphicon glyphicon-trash"></span> Trash
+        </button>
+    </div>
+    <div><button type="submit" class="btn second" (click)="onChange()">
+            <span class="glyphicon glyphicon-edit"></span> Change
+        </button></div>
+</div>

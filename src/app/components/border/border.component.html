@@ -1,0 +1,39 @@
+<div class="actions">
+
+
+
+  <div class="row">
+
+    <input #newBorder class="basic-slide" type="text" placeholder="Что бедем делать?" ngModel>
+
+    <button type="submit" class="btn first" (click)="onCreateBorder(newBorder.value); newBorder.value=''">
+      <span class="glyphicon glyphicon-plus"></span> plus border
+    </button>
+  </div>
+</div>
+
+
+
+<div class="all-borders">
+
+  <div class="borderStyle" *ngFor="let border of borders">
+    <form class="todo-form">
+      <h1 class="text">{{border.title}}</h1>
+      <input class="basic-slide" #newTodo type="text" name="title" placeholder="Что бедем делать?" ngModel>
+
+      <div>
+        <button class="btn third" (click)="onCreateTodo(newTodo.value, border); newTodo.value=''">Довавить</button>
+        <button class="btn third" type="submit" (click)="onDeleteBorder(border)">
+          <span class="glyphicon glyphicon-trash"></span> Trash Border </button>
+        <button class="btn third" type="submit" (click)="changeBorder(border)">
+          <span class="glyphicon glyphicon-edit"></span> Change Name Border
+        </button>
+      </div>
+    </form>
+
+    <div class="todo-list" *ngIf="border">
+      <todo-item *ngFor="let todo of border.items" [todo]="todo" (deleteT)="deleteT($event, border)" (changeT)="changeT($event, border)"></todo-item>
+    </div>
+
+  </div>
+</div>

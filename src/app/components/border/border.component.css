@@ -1,0 +1,191 @@
+.all-borders{
+    background: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+ 
+.borderStyle{
+    
+    border: 1px solid black;
+
+    text-align: center;
+    margin: 10px
+   
+
+}  
+.actions{
+    display: table-cell;
+    padding-left: 50px;
+}
+.form-content{ border: 1px solid #cccccc; 
+    border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    -khtml-border-radius: 3px;
+    background: #ffffff !important;  
+    height: 30px; 
+    width: 330px; 
+    color: #2e2426; 
+    font-size: 20px; 
+    font-family: Tahoma;}
+    
+
+.btn {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #853e3e;
+    border-radius: 0.6em;
+    color:  #853e3e;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+    .btn:hover {
+        color: #fff;
+        outline: 0;
+      }
+
+      .btn:focus{
+        color: #fff;
+        outline: 0;
+      }
+      
+  
+
+
+  .first {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;}
+    .first:hover {
+      box-shadow: 0 0 40px 40px #853e3e inset;
+    }
+
+   
+  
+
+
+
+
+      .row {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 60px 30px;
+        background: #6bb9c5;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+      }
+      .row:before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0;
+        left: -5000px;
+        height: 100%;
+        width: 15000px;
+        z-index: -1;
+        background: inherit;
+      }
+      .row:first-child {
+        padding: 40px 30px;
+      }
+      .row:nth-child(2), .row:nth-child(8), .row:nth-child(10) {
+        background: rgb(112, 60, 209);
+      }
+      .row:nth-child(3), .row:nth-child(7) {
+        background: #377D6A;
+      }
+      .row:nth-child(4), .row:nth-child(6) {
+        background: #7AB893;
+      }
+      .row:nth-child(5) {
+        background: #B2E3AF;
+      }
+      .row span {
+        position: relative;
+        display: inline-block;
+        margin: 30px 10px;
+      }
+      
+      .basic-slide {
+        display: inline-block;
+        width: 215px;
+        padding: 10px 0 10px 15px;
+        font-family: "Open Sans", sans;
+        font-weight: 400;
+        color: #377D6A;
+        background: #efefef;
+        border: 0;
+        border-radius: 3px;
+        outline: 0;
+        text-indent: 70px;
+        transition: all .3s ease-in-out;
+      }
+      .basic-slide::-webkit-input-placeholder {
+        color: #efefef;
+        text-indent: 0;
+        font-weight: 300;
+      }
+      .basic-slide + label {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 15px;
+        text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+        background: #7AB893;
+        transition: all .3s ease-in-out;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+      
+      .basic-slide:focus,
+      .basic-slide:active {
+        color: #377D6A;
+        text-indent: 0;
+        background: #fff;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .basic-slide:focus::-webkit-input-placeholder,
+      .basic-slide:active::-webkit-input-placeholder {
+        color: #aaa;
+      }
+      .basic-slide:focus + label,
+      .basic-slide:active + label {
+        transform: translateX(-100%);
+      }
+
+      .third {
+        border-color: #3498db;
+        color: #fff;
+        box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+        transition: all 150ms ease-in-out;
+      }
+      .third:hover {
+        box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+      }
+
+     .text{
+      
+        text-transform: uppercase;
+         background: linear-gradient(-10deg, #00B9AD 0%, #ffdd00 40%, #f47920 53%, #ee3d86 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 100px;
+        font-family: "Raleway", sans-serif;
+        font-weight:100;
+      
+     }
